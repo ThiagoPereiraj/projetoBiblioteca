@@ -14,7 +14,7 @@ class Biblioteca{
     print("Digite o autor do livro");
     autor=(stdin.readLineSync()!);
     livros.add(Livro(titulo,autor));
-    print("Livro adicionado com sucesso!");
+    print("Livro adicionado com sucesso!\n");
     // livros.add(Livro("1984", "George Orwell"));
     // livros.add(Livro("Dom Quixote", "Miguel de Cervantes"));
     // livros.add(Livro("O Grande Gatsby", "F. Scott Fitzgerald"));
