@@ -8,20 +8,20 @@ class Biblioteca{
   List <Cliente> emprestimo=[];
   Biblioteca(this.livros);
   void addLivros(){
-    // String titulo,autor;
-    // print("Digite o titulo do livro:");
-    // titulo= (stdin.readLineSync()!);
-    // print("Digite o autor do livro");
-    // autor=(stdin.readLineSync()!);
-    // livros.add(Livro(titulo,autor));
-    // print("Livro adicionado com sucesso!");
-    livros.add(Livro("1984", "George Orwell"));
-    livros.add(Livro("Dom Quixote", "Miguel de Cervantes"));
-    livros.add(Livro("O Grande Gatsby", "F. Scott Fitzgerald"));
-    livros.add(Livro("Cem Anos de Solidão", "Gabriel García Márquez"));
-    livros.add(Livro("Orgulho e Preconceito", "Jane Austen"));
-    livros.add(Livro("O Senhor dos Anéis", "J.R.R. Tolkien"));
-    livros.add(Livro("Harry Potter e a Pedra Filosofal", "J.K. Rowling"));
+    String titulo,autor;
+    print("Digite o titulo do livro:");
+    titulo= (stdin.readLineSync()!);
+    print("Digite o autor do livro");
+    autor=(stdin.readLineSync()!);
+    livros.add(Livro(titulo,autor));
+    print("Livro adicionado com sucesso!");
+    // livros.add(Livro("1984", "George Orwell"));
+    // livros.add(Livro("Dom Quixote", "Miguel de Cervantes"));
+    // livros.add(Livro("O Grande Gatsby", "F. Scott Fitzgerald"));
+    // livros.add(Livro("Cem Anos de Solidão", "Gabriel García Márquez"));
+    // livros.add(Livro("Orgulho e Preconceito", "Jane Austen"));
+    // livros.add(Livro("O Senhor dos Anéis", "J.R.R. Tolkien"));
+    // livros.add(Livro("Harry Potter e a Pedra Filosofal", "J.K. Rowling"));
   }
 
   void removeLivros(){
