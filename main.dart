@@ -1,10 +1,11 @@
-
 import 'biblioteca.dart';
 import 'dart:io';
+
 void main() {
-  var instancia=Biblioteca([]);
-  int option=0;
-  do{
+  var instancia = Biblioteca([]);
+  int option = 0;
+  instancia.addListaLivros();
+  do {
     print("Digite o que deseja fazer:");
     print("1. Adicionar um livro na biblioteca");
     print("2. Remover um livro na biblioteca");
@@ -13,7 +14,7 @@ void main() {
     print("5. Consultar Livros Disponiveis");
     print("6. Consultar Empréstimos");
     print("7. Finalizar Progama");
-    option=int.parse(stdin.readLineSync()!);
+    option = int.parse(stdin.readLineSync()!);
     switch (option) {
       case 1:
         instancia.addLivros();
@@ -39,6 +40,6 @@ void main() {
       default:
         print("Opção inválida");
     }
-  }while(option!=7);
+  } while (option != 7);
 }
-//https://github.com/marnescassule/bibliotecaPOO        
+    
